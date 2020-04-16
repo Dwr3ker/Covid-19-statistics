@@ -107,6 +107,14 @@ p {
 
 .btn {
   background-color: #9c0235;
+  color: white;
+  border-color: white;
+}
+
+.btn:hover{
+  background-color: #34575c;
+  color: white;
+  border-color: white;
 }
 
 #date {
