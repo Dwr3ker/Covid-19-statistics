@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    
+    <!-- import the webpage's javascript file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1 id="title">
+      The Covid-19 Statistics
+    </h1>
+   
+    
+    <div id="wrapper">
+      <div id="input">
+        <input class="form-control" id="search" type="text" placeholder="Search for a country(press the enter key)" />
+      </div>
+      <div id="map"></div>
+      <div id="infoTitle">
+        <p id="titleTwo">
+          COVID-19 CORONAVIRUS PANDEMIC IN
+        </p>
+      </div>
+      <div id="info">
+        <p id="country">
+          *Country*
+        </p>
+        <p id="cases">
+          Confirmed Cases:_______
+        </p>
+        <p id="recovery">
+          Recovered:<span id="greeny">______</span>
+        </p>
+        <p id="critical">
+          Critical:_____
+        </p>
+        <p id="dead">
+          Deaths:<span id="redish">______</span>
+        </p>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="total">Total Report</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="daily">Today's Total Report</button>
+        <input class="form-control" id="date" type="text" placeholder="Daily Report Total(YYYY-MM-DD)" />
+      </div>
+    </div>
+   
+    
+    
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxGoGsUYZjn1pp5WIsUG3o9-CQDVNGHU8&callback=createMap&libraries=places&types=country"
+  type="text/javascript"></script>
+  </body>
+</html>
